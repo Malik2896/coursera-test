@@ -1,0 +1,312 @@
+@media (min-width:1200px)
+{
+    body{
+        margin: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 0px;
+        background-image: url('../images/bg2.jpg');
+        background-size: cover;
+        color: #ffff;
+    }
+    #main{
+        background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.5));
+        margin: 0 auto;
+        width: 96%;
+        height: 100vh;
+        box-sizing: border-box;
+    }
+    header{
+        width:100%;
+        box-sizing: border-box;
+        margin:0;
+        line-height: 50px;
+        height: 10vh;
+        background: rgba(0,0,0,0.6);
+    }
+    .logo{
+        width:30%;
+        box-sizing: border-box;
+        float:left;
+        animation:heartBeat 1s;
+        
+        animation-iteration-count: infinite;
+    }
+    .logo h1 i{
+        margin-right:10px;
+        color:#f5f6fa;
+    }
+    .logo h1{
+        margin:0 50px;
+        color:#f5f6fa;
+    }
+    nav{
+        width:40%;
+        float:right;
+        box-sizing: border-box;
+    }
+    nav a{
+        display: block;
+        box-sizing: border-box;
+        width:25%;
+        float:left;
+        text-align: center;
+        color:#ffff;
+        text-decoration: none;
+        text-transform: uppercase;
+        background: #06d8ae;
+        margin:1% 2%;
+        font-weight: 700;
+        border-radius: 10%;
+        transition: all 0.5s ease;
+    }
+    nav a:hover{
+        background: #fff;
+        color:#000;
+    }
+    nav .active{
+        background: #fff;
+        color:rgb(0,0,51);
+        text-shadow:1px 1px 1px rgb(236, 19, 19);
+        font-size:large;
+    }
+    main{
+        width:100%;
+        height: 60vh;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    main h3{
+        margin-top:10%;
+        width:100%;
+        font-size:xx-large;
+        letter-spacing: 2%;
+        font-weight: 200;
+        text-shadow: 2px 1px 5px black;
+    }
+    main h1{
+        margin:30px 0 20px 0;
+        font-size:55px;
+        font-weight: 600;
+        text-shadow: 2px 1px 5px black;
+        margin-bottom:2%;
+    }
+    main a{    
+        padding:12px 30px;
+        border-radius:4px;
+        outline: none;
+        text-transform: uppercase;
+        font-size:13px;
+        text-decoration:none;
+        letter-spacing: 1%;
+        font-weight: 700;
+        transition: all .5s ease;
+    }
+    .admin_btn{
+        /*background: #00b894;*/
+        margin-top: 10%;
+        background: #fff;
+        color:#000;
+        font-size:large;
+    }
+    main .admin_btn:hover{
+        background: #00b894;
+        color:#fff;
+    }
+    main .user_btn{
+        background: #00b894;
+        margin-top: 10%;
+        font-size:large;
+        color:#fff;
+    }
+    main .user_btn:hover{
+        background: #fff;
+        color:#000;
+    }
+    .change-content:after{
+        content: '';
+        animation: changetext 4s infinite linear;
+        color:#00b894;
+    }
+    @keyframes changetext{
+        0%{content: 'Admin';}
+        100%{content:'User';}
+    }
+    footer{
+        height: 10vh;
+        width:100%;
+        box-sizing: border-box;
+        margin: 0px;
+        background:rgba(0,0,0,0.6);
+    }
+    footer .nav_menu{
+        width:40%;
+        float:left;
+        margin:0px;
+        
+    }
+    footer .nav_menu a{
+        color:#fff;
+        text-decoration:none;
+        display:block;
+        width:20%;
+        margin:0 0 0 10px;
+        transition:all 0.5 ease;
+    }
+    footer .nav_menu a:hover{
+        font-size:large;
+
+    }
+    footer .social_icons{
+        width:50%;
+        float: right;
+        
+    }
+    footer .social_icons p{
+        width:30%;
+        float:left;
+        margin-left:70px;
+    }
+    footer .social_icons a{
+        margin-left:5%;
+        display:inline-block;
+        width:40px;
+        height:40px;
+        background:#f1f1f1;
+        margin:1%;
+        color:#3498db;
+        border-radius: 30%;
+        box-shadow: 0 5px 15px -5px #000000;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+    }
+    footer .btn i{
+        line-height: 40px;
+        font-size:large;
+        transition:0.2s linear;
+    }
+    footer .btn:hover i{
+        transform: scale(2);
+        color:#f1f1f1;
+    }
+    footer .btn::before{
+        content:'';
+        width:120%;
+        position: absolute;
+        height: 120%;
+        background: #3498db;
+        transform: rotate(45deg);
+        left:-110%;
+        top:70%;
+    }
+    footer .btn:hover::before{
+        animation:aaa 1s 1;
+        top:-10%;
+        left:-10%;
+    }
+    @keyframes aaa{
+        0%{
+            left:10%;
+            top:-30%;
+        }
+        50%{
+            left:-110%;
+            top:90%;
+        }
+        100%{
+            top:-10%;
+            left:-10%;
+        }
+    }
+    #main_content{
+        width:100%;
+        height:80vh;
+        box-sizing: border-box;
+    }
+    #about_BMS{
+        width:60%;
+        height:60vh;
+        float:left;
+        margin:5vh 2vw 5vh 2vw;
+        box-sizing:border-box;
+        padding:1%;
+        color:#fff;
+    }
+    #about_BMS h2{
+        font-size:xx-large;
+    }
+    #about_BMS p{
+        text-indent: 3%;
+        text-align: justify;
+        line-height: 25px;
+        font-size: 20px;
+    }
+    #about_developer{
+        width:30%;
+        height:60vh;
+        float:right;
+        margin:5vh 2vw 5vh 0;
+        box-sizing:border-box;
+        padding:1%;
+    }
+    #about_developer h2{
+        font-size:xx-large;
+    }
+    #about_developer .info{
+        width:60%;
+        float:left;
+    }
+    #about_developer h3{
+        font-size:large;
+        text-align: center;
+        font-weight: 800;
+    }
+    #about_developer img{
+        width:30%;
+        margin:0 5%;
+        border-radius: 10%;
+    }
+    #about_developer ul{
+        font-weight: 700;
+    }
+    #about_developer li{
+        margin:5px 0px;
+    }
+    #contact_form{
+        width:50%;
+        height: 50vh;
+        position:relative;
+        top:17%;
+        left:25%;
+        padding:1%;
+        box-sizing: border-box;
+    }
+    #contact_form textarea{
+        resize:none;
+        margin:5%;
+    }
+    #contact_form input[type="button"]{
+        margin:2%;
+    }
+    #contact_form label{
+        font-size:large;
+        margin:0.5%;
+    }
+    #contact_form #contact_btn{
+        padding:10px;
+        color:white;
+        text-align:center;
+        background-color:#04b4fa;
+        border:1px solid #000;
+        width:12%;
+        font-size:large;
+        font-weight:600;
+        border-radius: 5px;
+        cursor:pointer;
+        position: absolute;
+        left:25%;
+    }
+    #contact_form #contact_btn:hover{
+        background-color: #3092eeed;
+    }
+}
